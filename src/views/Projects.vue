@@ -12,8 +12,8 @@
             class="pos-relative"
           >
             <div class="pos-absolute-center white-text">
-              <p class="font-weight-bold r-fs-30">My Recent Work</p>
-              <p class="r-fs-20">Here are a few recent design projects. Want to see more? Email me.</p>
+              <p class="font-weight-bold rs-fs-30">My Recent Work</p>
+              <p class="rs-fs-20">Here are a few recent design projects. Want to see more? Email me.</p>
             </div>
           </div>
 
@@ -34,10 +34,10 @@
                   </q-parallax>
                 </div>
                 <div class="rs-card-content">
-                  <div class="rs-card-title text-center font-weight-bold r-fs-16">
+                  <div class="rs-card-title text-center font-weight-bold rs-fs-16">
                     <p>“QCPU SAKAY" – A Bus Transportation System</p>
                   </div>
-                  <div class="rs-card-body r-fs-12 mt-2">
+                  <div class="rs-card-body rs-fs-12 mt-2">
                     <p>Good Ride Starts Here.</p>
                     <p>
                       QCPU Sakay is your best commuting buddy that let you commute with ease. Get an
@@ -73,10 +73,10 @@
                   </q-parallax>
                 </div>
                 <div class="rs-card-content">
-                  <div class="rs-card-title text-center font-weight-bold r-fs-16">
+                  <div class="rs-card-title text-center font-weight-bold rs-fs-16">
                     <p>ServRevo Corporation – Seats and Room Reservation System</p>
                   </div>
-                  <div class="rs-card-body r-fs-12 mt-2">
+                  <div class="rs-card-body rs-fs-12 mt-2">
                     <p>ServRevo Corp. (ServRevo) is an outsourcing company providing shared services, co-working spaces, HR/Payroll, and staffing solutions.</p>
                     <p>Our bespoke offshore solutions integrate seamlessly with any business requirement - providing a full rage of services covering recruitment, human resources, payroll management and services offices.</p>
                     <a

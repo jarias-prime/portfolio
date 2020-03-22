@@ -86,21 +86,21 @@ Kalwinder Dohil, IT Manager at TIGI International
                 <h4 class="text-center">Overview</h4>
                 <h5>Hi, I’m John. Nice to meet you.</h5>
                 <div class="width-90 text-justify">
-                  <span class="block r-fs-12">
+                  <span class="block rs-fs-12">
                     Since beginning my journey as a web developer and front-end developer nearly 3 years ago, I've done remote work for students of QCPU for their projects,
                     developing proffessors existing projects, and collaborated with talented people to create and develop a create digital products for both business and consumer use.
                     I'm quietly confident, naturally curious, and perpetually working on improving my skills at a time.
                   </span>
                 </div>
 
-                <p class="mt-1 font-weight-bold r-fs-12">College Graduate</p>
+                <p class="mt-1 font-weight-bold rs-fs-12">College Graduate</p>
                 <q-timeline-entry
                   title="Quezon City Polytechnic University (QCPU)"
                   subtitle="April 25, 2019"
                   color="orange"
                   icon="done_all"
                 >
-                  <div class="r-fs-10">
+                  <div class="rs-fs-10">
                     <p class="mt--1">
                       <span class="font-weight-bold">Course:</span> Bachelor of Science in Information Technology (I.T.)
                     </p>
@@ -114,14 +114,14 @@ Kalwinder Dohil, IT Manager at TIGI International
                   </div>
                 </q-timeline-entry>
 
-                <p class="mt-1 font-weight-bold r-fs-12">Work Experience</p>
+                <p class="mt-1 font-weight-bold rs-fs-12">Work Experience</p>
                 <q-timeline-entry
                   title="ServRevo Corp."
                   subtitle="April 2018 – February 2019"
                   color="orange"
                   icon="done_all"
                 >
-                  <div class="r-fs-10">
+                  <div class="rs-fs-10">
                     <p class="mt--1">
                       <span class="font-weight-bold">Position:</span> Front-end Developer / Full stack (Trainee)
                     </p>
@@ -177,7 +177,7 @@ Kalwinder Dohil, IT Manager at TIGI International
                   </q-parallax>
 
                   <div class="mt-2 text-justify">
-                    <span class="block r-fs-12">
+                    <span class="block rs-fs-12">
                       Since beginning my journey as a web developer and front-end developer nearly 3 years ago, I've done remote work for students of QCPU for their projects,
                       developing proffessors existing projects, and collaborated with talented people to create and develop a create digital products for both business and consumer use.
                       I'm quietly confident, naturally curious, and perpetually working on improving my skills at a time.
@@ -190,14 +190,14 @@ Kalwinder Dohil, IT Manager at TIGI International
               <q-card class="my-card m-1 p-1 height-100">
                 <q-card-section>
                   <q-timeline color="secondary">
-                    <p class="mt-1 font-weight-bold r-fs-12">College Graduate</p>
+                    <p class="mt-1 font-weight-bold rs-fs-12">College Graduate</p>
                     <q-timeline-entry
                       title="Quezon City Polytechnic University (QCPU)"
                       subtitle="April 25, 2019"
                       color="orange"
                       icon="done_all"
                     >
-                      <div class="r-fs-10">
+                      <div class="rs-fs-10">
                         <p class="mt--1">
                           <span class="font-weight-bold">Course:</span> Bachelor of Science in Information Technology (I.T.)
                         </p>
@@ -211,14 +211,14 @@ Kalwinder Dohil, IT Manager at TIGI International
                       </div>
                     </q-timeline-entry>
 
-                    <p class="mt-1 font-weight-bold r-fs-12">Work Experience</p>
+                    <p class="mt-1 font-weight-bold rs-fs-12">Work Experience</p>
                     <q-timeline-entry
                       title="ServRevo Corp."
                       subtitle="April 2018 – February 2019"
                       color="orange"
                       icon="done_all"
                     >
-                      <div class="r-fs-10">
+                      <div class="rs-fs-10">
                         <p class="mt--1">
                           <span class="font-weight-bold">Position:</span> Front-end Developer / Full stack (Trainee)
                         </p>
@@ -278,13 +278,13 @@ Kalwinder Dohil, IT Manager at TIGI International
                     <div class="divider-art divider-art-icon">
                       <div class="shadow"></div>
                     </div>
-                    <p class="r-fs-14">I generally like to code from different server side programming languages from scratch and Integrating APIs.</p>
+                    <p class="rs-fs-14">I generally like to code from different server side programming languages from scratch and Integrating APIs.</p>
                   </div>
                 </q-card-section>
 
                 <q-card-section>
-                  <p class="r-fs-14 font-weight-bold">What I can do for as a Back-end Developer:</p>
-                  <ul class="r-fs-12">
+                  <p class="rs-fs-14 font-weight-bold">What I can do for as a Back-end Developer:</p>
+                  <ul class="rs-fs-12">
                     <li>Can adapt from different server side programming languages or frameworks.</li>
                     <li>Integrating APIs from different applications.</li>
                     <li>Launched apps from dirrent hosting (firebase, hoststinger, etc.).</li>
@@ -314,13 +314,13 @@ Kalwinder Dohil, IT Manager at TIGI International
                     <div class="divider-art divider-art-icon">
                       <div class="shadow"></div>
                     </div>
-                    <p class="r-fs-14">I like to code things from scratch or using a framework, and enjoy bringing ideas to life in the browser.</p>
+                    <p class="rs-fs-14">I like to code things from scratch or using a framework, and enjoy bringing ideas to life in the browser.</p>
                   </div>
                 </q-card-section>
 
                 <q-card-section>
-                  <p class="r-fs-14 font-weight-bold">Thigs I do beign a Front-end Developer:</p>
-                  <ul class="r-fs-12">
+                  <p class="rs-fs-14 font-weight-bold">Thigs I do beign a Front-end Developer:</p>
+                  <ul class="rs-fs-12">
                     <li>Designing using HTML/CSS</li>
                     <li>Creating and debugging JavaScript/jQuery</li>
                     <li>Using different CSS/Front-end Frameworks</li>
@@ -353,15 +353,15 @@ Kalwinder Dohil, IT Manager at TIGI International
                     <div class="divider-art divider-art-icon">
                       <div class="shadow"></div>
                     </div>
-                    <p class="r-fs-14">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                    <p class="rs-fs-14">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
                   </div>
                 </q-card-section>
 
                 <q-card-section>
-                  <p class="r-fs-14 font-weight-bold">Things I enjoy designing:</p>
-                  <p class="r-fs-12">UX, UI, Web, Mobile, Apps, Logos, Video Editing</p>
-                  <p class="r-fs-14 font-weight-bold">Design Tools:</p>
-                  <ul class="r-fs-12">
+                  <p class="rs-fs-14 font-weight-bold">Things I enjoy designing:</p>
+                  <p class="rs-fs-12">UX, UI, Web, Mobile, Apps, Logos, Video Editing</p>
+                  <p class="rs-fs-14 font-weight-bold">Design Tools:</p>
+                  <ul class="rs-fs-12">
                     <li>Adobe XD</li>
                     <li>Adobe Illustrator</li>
                     <li>Adobe Photoshop</li>
@@ -383,7 +383,7 @@ Kalwinder Dohil, IT Manager at TIGI International
 
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-8 white">
-              <p class="grey-text font-weight-bold r-fs-14 text-center m-2">Languages and Frameworks Used</p>
+              <p class="grey-text font-weight-bold rs-fs-14 text-center m-2">Languages and Frameworks Used</p>
               <div class="col-12">
                 <div class="row m-2">
                   <div class="col-5">
@@ -524,10 +524,10 @@ Kalwinder Dohil, IT Manager at TIGI International
               </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 white">
-              <p class="grey-text font-weight-bold r-fs-14 text-center m-2">Communication and writing skills</p>
+              <p class="grey-text font-weight-bold rs-fs-14 text-center m-2">Communication and writing skills</p>
               <div class="row m-2 mt-3">
                 <div class="col-3">
-                  <p class="font-weight-bold r-fs-16">Filipino</p>
+                  <p class="font-weight-bold rs-fs-16">Filipino</p>
                 </div>
                 <div class="col-9">
                   <q-linear-progress
@@ -539,7 +539,7 @@ Kalwinder Dohil, IT Manager at TIGI International
                   />
                 </div>
                 <div class="col-3">
-                  <p class="font-weight-bold r-fs-16">English</p>
+                  <p class="font-weight-bold rs-fs-16">English</p>
                 </div>
                 <div class="col-9">
                   <q-linear-progress
@@ -553,7 +553,7 @@ Kalwinder Dohil, IT Manager at TIGI International
               </div>
               <div class="row m-3 text-center">
                 <div class="col-3">
-                  <p class="font-weight-bold r-fs-14 m-1 mt-2">Filipino</p>
+                  <p class="font-weight-bold rs-fs-14 m-1 mt-2">Filipino</p>
                 </div>
                 <div class="col-3">
                   <q-circular-progress
@@ -595,7 +595,7 @@ Kalwinder Dohil, IT Manager at TIGI International
                   <p>Communicate</p>
                 </div>
                 <div class="col-3">
-                  <p class="font-weight-bold r-fs-14 m-1 mt-2">English</p>
+                  <p class="font-weight-bold rs-fs-14 m-1 mt-2">English</p>
                 </div>
                 <div class="col-3">
                   <q-circular-progress
@@ -936,7 +936,7 @@ Kalwinder Dohil, IT Manager at TIGI International
 }
 
 .skill-card-lg {
-  height: calc(46% + 1vmin);
+  height: calc(30em + 1vmin);
   width: 96%;
   background: #fefefe;
   border-radius: 2px;
@@ -965,13 +965,8 @@ Kalwinder Dohil, IT Manager at TIGI International
 </style>
 
 <script>
-import { viewersRef } from '@/components/firebaseConfig'
-
 export default {
-  mounted () {
-    // Call Method Functions
-    this.device_data()
-  },
+  mounted () { },
   data () {
     return {
       dialog: false,
@@ -986,162 +981,7 @@ export default {
       english_communicate: 90
     }
   },
-  methods: {
-    // TriggerIncrement() {
-    //   this.$store.dispatch("PlusUltra");
-    // }
-
-    device_data: function () {
-      // Check if browser supports local storage
-      if (typeof (Storage) !== 'undefined') {
-        // Validate if unique key is not defined
-        if (localStorage.getItem('unique-key') === null) {
-          // Set device unique-key
-          let date = new Date()
-          let components = [
-            date.getYear(),
-            date.getMonth(),
-            date.getDate(),
-            date.getHours(),
-            date.getMinutes(),
-            date.getSeconds(),
-            date.getMilliseconds()
-          ]
-          let key = components.join('')
-          localStorage.setItem('unique-key', key)
-
-          // Read from firebase database
-          var key_array = []
-          viewersRef.on('value', function (snapshot) {
-            snapshot.forEach(function (data) {
-              var childData = data.val()
-              key_array.push(childData.unique_key)
-            })
-          })
-
-          setTimeout(() => {
-            // Check if unique key exist
-            var local_key = localStorage.getItem('unique-key')
-            if (key_array.indexOf(local_key) == -1) {
-              // Get device informations
-              let module = {
-                options: [],
-                header: [navigator.platform, navigator.userAgent, navigator.appVersion, navigator.vendor, window.opera],
-                dataos: [
-                  { name: 'Windows Phone', value: 'Windows Phone', version: 'OS' },
-                  { name: 'Windows', value: 'Win', version: 'NT' },
-                  { name: 'iPhone', value: 'iPhone', version: 'OS' },
-                  { name: 'iPad', value: 'iPad', version: 'OS' },
-                  { name: 'Kindle', value: 'Silk', version: 'Silk' },
-                  { name: 'Android', value: 'Android', version: 'Android' },
-                  { name: 'PlayBook', value: 'PlayBook', version: 'OS' },
-                  { name: 'BlackBerry', value: 'BlackBerry', version: '/' },
-                  { name: 'Macintosh', value: 'Mac', version: 'OS X' },
-                  { name: 'Linux', value: 'Linux', version: 'rv' },
-                  { name: 'Palm', value: 'Palm', version: 'PalmOS' }
-                ],
-                databrowser: [
-                  { name: 'Chrome', value: 'Chrome', version: 'Chrome' },
-                  { name: 'Firefox', value: 'Firefox', version: 'Firefox' },
-                  { name: 'Safari', value: 'Safari', version: 'Version' },
-                  { name: 'Internet Explorer', value: 'MSIE', version: 'MSIE' },
-                  { name: 'Opera', value: 'Opera', version: 'Opera' },
-                  { name: 'BlackBerry', value: 'CLDC', version: 'CLDC' },
-                  { name: 'Mozilla', value: 'Mozilla', version: 'Mozilla' }
-                ],
-                init: function () {
-                  var agent = this.header.join(' ')
-                  var os = this.matchItem(agent, this.dataos)
-                  var browser = this.matchItem(agent, this.databrowser)
-
-                  return { os: os, browser: browser }
-                },
-                matchItem: function (string, data) {
-                  var i = 0
-                  var j = 0
-                  var html = ''
-                  var regex
-                  var regexv
-                  var match
-                  var matches
-                  var version
-
-                  for (i = 0; i < data.length; i += 1) {
-                    regex = new RegExp(data[i].value, 'i')
-                    match = regex.test(string)
-                    if (match) {
-                      regexv = new RegExp(data[i].version + '[- /:;]([\\d._]+)', 'i')
-                      matches = string.match(regexv)
-                      version = ''
-                      if (matches) { if (matches[1]) { matches = matches[1] } }
-                      if (matches) {
-                        matches = matches.split(/[._]+/)
-                        for (j = 0; j < matches.length; j += 1) {
-                          if (j === 0) {
-                            version += matches[j] + '.'
-                          } else {
-                            version += matches[j]
-                          }
-                        }
-                      } else {
-                        version = '0'
-                      }
-                      return {
-                        name: data[i].name,
-                        version: parseFloat(version)
-                      }
-                    }
-                  }
-                  return { name: 'unknown', version: 0 }
-                }
-              }
-
-              let e = module.init()
-
-              // Get current date and time
-              let today = new Date()
-              let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()
-              let time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
-              let dateTime = date + ' ' + time
-
-              // Insert to firebase database
-              viewersRef.push({
-                unique_key: local_key,
-                // country: device_data.geoplugin_city,
-                // city: device_data.geoplugin_city,
-                // latitude: device_data.geoplugin_city,
-                // longitude: device_data.geoplugin_city,
-                os_name: e.os.name,
-                os_vesion: e.os.version,
-                browser_name: e.browser.name,
-                browser_version: e.browser.version,
-                user_agent: navigator.userAgent,
-                app_version: navigator.appVersion,
-                platform: navigator.platform,
-                vendor: navigator.vendor,
-                date_visit: dateTime
-              }).then(function (e) {
-                console.log('Document successfully written!')
-              })
-                .catch(function (error) {
-                  console.error('Error writing document: ', error)
-                })
-            } else {
-              console.log('%c Device already exist', 'color: teal;')
-            }
-          }, 2000)
-        } else {
-          console.log('%c Unique key exist', 'color: teal')
-        }
-      } else {
-        console.log('%c Local storage does not support this browser', 'color: #f44336')
-      }
-    }
-  },
-  computed: {
-    // count() {
-    //   return this.$store.state.count;
-    // }
-  }
+  methods: {},
+  computed: {}
 }
 </script>

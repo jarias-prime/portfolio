@@ -6,13 +6,20 @@
         style="height: 50px;"
       >
         <div class="col">
-          <q-slide-item left-color="teal-6" @left="developers_auth">
+          <q-slide-item
+            left-color="teal-6"
+            @left="developers_auth"
+            style="width:30%"
+          >
             <template v-slot:left>
-              <span class="r-fs-12 font-weight-bold text-white pos-center">Enable Developers Console</span>
+              <span class="rs-fs-12 font-weight-bold text-white pos-center">Enable Developers Console</span>
             </template>
-            <q-item class="bg-grey-1">
-              <q-item-section avatar>
-                <span class="r-fs-16 font-weight-bold text-teal">My Portfolio</span>
+            <q-item
+              class="bg-grey-2"
+              to="/"
+            >
+              <q-item-section>
+                <span class="rs-fs-16 font-weight-bold text-teal">My Portfolio</span>
               </q-item-section>
             </q-item>
           </q-slide-item>
@@ -74,7 +81,7 @@
     >
       <q-card class="text-white width-80">
         <q-bar class="black">
-          <span class="r-fs-12">Developers Console</span>
+          <span class="rs-fs-12">Developers Console</span>
           <q-space />
           <q-btn
             dense
@@ -86,27 +93,70 @@
           </q-btn>
         </q-bar>
 
-        <form @submit.prevent.stop="developers_authentication" @reset.prevent.stop="onReset">
+        <form
+          @submit.prevent.stop="developers_authentication"
+          @reset.prevent.stop="onReset"
+        >
           <div id="developers_content">
             <q-card-section>
               <div class="pos-center">
-                <q-btn type="submit" class="shadow-none" round size="50px">
+                <q-btn
+                  type="submit"
+                  class="shadow-none"
+                  round
+                  size="50px"
+                >
                   <q-avatar size="150px">
-                    <img id="logo-black" src="@/assets/images/main-logo/main-logo-animated-black.svg" alt="Root Logo">
-                    <img id="logo-red" class="pos-absolute-center" src="@/assets/images/main-logo/main-logo-animated-red.svg" alt="Root Logo">
+                    <img
+                      id="logo-black"
+                      src="@/assets/images/main-logo/main-logo-animated-black.svg"
+                      alt="Root Logo"
+                    >
+                    <img
+                      id="logo-red"
+                      class="pos-absolute-center"
+                      src="@/assets/images/main-logo/main-logo-animated-red.svg"
+                      alt="Root Logo"
+                    >
                   </q-avatar>
                 </q-btn>
               </div>
             </q-card-section>
             <q-card-section>
-              <q-input ref="username" v-model="username" color="green" outlined label="Username" lazy-rules :rules="[val => !!val || 'Username is required']">
+              <q-input
+                ref="username"
+                v-model="username"
+                color="green"
+                outlined
+                label="Username"
+                lazy-rules
+                :rules="[val => !!val || 'Username is required']"
+              >
                 <template v-slot:prepend>
-                  <q-avatar font-size="25px" color="black" text-color="white" icon="account_circle" />
+                  <q-avatar
+                    font-size="25px"
+                    color="black"
+                    text-color="white"
+                    icon="account_circle"
+                  />
                 </template>
               </q-input>
-              <q-input ref="password" v-model="password" :type="isPwd ? 'password' : 'text'" color="green" outlined label="Password" :rules="[val => !!val || 'Password is required']">
+              <q-input
+                ref="password"
+                v-model="password"
+                :type="isPwd ? 'password' : 'text'"
+                color="green"
+                outlined
+                label="Password"
+                :rules="[val => !!val || 'Password is required']"
+              >
                 <template v-slot:prepend>
-                  <q-avatar font-size="25px" color="black" text-color="white" icon="lock" />
+                  <q-avatar
+                    font-size="25px"
+                    color="black"
+                    text-color="white"
+                    icon="lock"
+                  />
                 </template>
                 <template v-slot:append>
                   <q-icon
@@ -126,40 +176,40 @@
 </template>
 
 <style scoped>
-  #logo-black {
-      opacity: 1;
-      transition: 1s all ease;
-  }
+#logo-black {
+  opacity: 1;
+  transition: 1s all ease;
+}
 
-  #logo-red {
-    opacity: 0;
-    transition: .5s all ease;
-  }
+#logo-red {
+  opacity: 0;
+  transition: 0.5s all ease;
+}
 
-  #gradient {
-    width: 100%;
-    height: 800px;
-    padding: 0px;
-    margin: 0px;
-  }
+#gradient {
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+}
 
-  #developers_content {
-    background: linear-gradient(-45deg, #fafafa, #fafafa, #757F9A, #757F9A);
-    background-size: 400% 400%;
-    animation: developers_bg 15s ease infinite;
-  }
+#developers_content {
+  background: linear-gradient(-45deg, #fafafa, #fafafa, #757f9a, #757f9a);
+  background-size: 400% 400%;
+  animation: developers_bg 15s ease infinite;
+}
 
-  @keyframes developers_bg {
-    0% {
-      background-position: 30% 70%;
-    }
-    50% {
-      background-position: 100% 70%;
-    }
-    100% {
-      background-position: 30% 70%;
-    }
+@keyframes developers_bg {
+  0% {
+    background-position: 30% 70%;
   }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 30% 70%;
+  }
+}
 </style>
 
 <script>

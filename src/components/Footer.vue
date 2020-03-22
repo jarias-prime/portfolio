@@ -6,7 +6,7 @@
       src="@/assets/images/main-logo/main-logo-animated-white.svg"
       alt="Root Logo"
     />
-    <p class="font-weight-bold r-fs-24">Living, learning, & leveling up one day at a time.</p>
+    <p class="font-weight-bold rs-fs-24">Living, learning, & leveling up one day at a time.</p>
     <p class="font-size-18">Handcrafted by &copy; 2019, John Rafael M. Arias</p>
     <a href="https://www.facebook.com/one4arias?ref=bookmarks">
       <q-avatar class="social-media-icons">
@@ -26,7 +26,10 @@
     </a>
     <a href="https://www.youtube.com/channel/UCKhiYIV1YmY2yCi4GARXFJg?view_as=subscriber">
       <q-avatar class="social-media-icons">
-        <img src="https://www.seoclerk.com/pics/647926-1JzejF1546580004.png" alt="Youtube" />
+        <img
+          src="https://www.seoclerk.com/pics/647926-1JzejF1546580004.png"
+          alt="Youtube"
+        />
       </q-avatar>
     </a>
     <a href="https://my.indeed.com/p/johnrafaelmantillaa-ckgi9rw/profile">
