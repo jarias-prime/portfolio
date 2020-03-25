@@ -14,10 +14,7 @@
             <template v-slot:left>
               <span class="rs-fs-12 font-weight-bold text-white pos-center">Enable Developers Console</span>
             </template>
-            <q-item
-              class="bg-grey-2"
-              to="/"
-            >
+            <q-item class="bg-grey-2">
               <q-item-section>
                 <span class="rs-fs-16 font-weight-bold text-teal">My Portfolio</span>
               </q-item-section>
@@ -72,7 +69,7 @@
       </q-bar>
     </q-header>
 
-    <!-- Develope Login -->
+    <!-- Developers Login -->
     <q-dialog
       v-model="developers_dialog_box"
       persistent
@@ -80,7 +77,10 @@
       transition-hide="flip-up"
     >
       <q-card class="text-white width-80">
-        <q-bar class="black">
+        <q-bar
+          id="developers_content"
+          class="black"
+        >
           <span class="rs-fs-12">Developers Console</span>
           <q-space />
           <q-btn
@@ -97,7 +97,7 @@
           @submit.prevent.stop="developers_authentication"
           @reset.prevent.stop="onReset"
         >
-          <div id="developers_content">
+          <div>
             <q-card-section>
               <div class="pos-center">
                 <q-btn
@@ -124,13 +124,15 @@
             </q-card-section>
             <q-card-section>
               <q-input
-                ref="username"
-                v-model="username"
+                class="m-1"
+                ref="email"
+                v-model="email"
+                type="email"
                 color="green"
                 outlined
-                label="Username"
+                label="Email Address"
                 lazy-rules
-                :rules="[val => !!val || 'Username is required']"
+                :rules="[val => !!val || 'Email is required']"
               >
                 <template v-slot:prepend>
                   <q-avatar
@@ -142,6 +144,7 @@
                 </template>
               </q-input>
               <q-input
+                class="m-1"
                 ref="password"
                 v-model="password"
                 :type="isPwd ? 'password' : 'text'"
@@ -194,8 +197,9 @@
 }
 
 #developers_content {
-  background: linear-gradient(-45deg, #fafafa, #fafafa, #757f9a, #757f9a);
+  background: linear-gradient(-45deg, #fafafa, #fafafa, #979ba7, #979ba7);
   background-size: 400% 400%;
+  color: #000;
   animation: developers_bg 15s ease infinite;
 }
 
@@ -213,75 +217,105 @@
 </style>
 
 <script>
-import { usersRef } from '@/components/firebaseConfig'
+// import { usersRef } from '@/components/firebaseConfig'
+import firebase from 'firebase'
 
 export default {
-  mounted () {
-    this.start()
-  },
+  mounted () { },
   data () {
     return {
       developers_dialog_box: false,
       isPwd: true,
-      username: null,
+      email: null,
       password: null
     }
   },
   methods: {
     developers_auth ({ reset }) {
-      this.$q.notify('developers authentication is required. Please Login.')
-      this.developers_dialog_box = true
-      this.developers_auth_reset(reset)
-    },
+      let self = this
 
+      this.$q.notify('developers authentication is required. Please Login.')
+      this.developers_auth_reset(reset)
+
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          self.$router.push({ name: 'dashboard' })
+        } else {
+          self.developers_dialog_box = true
+        }
+      })          
+    },
     developers_auth_reset (reset) {
       this.timer = setTimeout(() => {
         reset()
       }, 3000)
     },
-
     developers_authentication: function () {
-      this.$refs.username.validate()
+      this.$refs.email.validate()
       this.$refs.password.validate()
 
-      if (this.$refs.username.hasError || this.$refs.password.hasError) {
+      if (this.$refs.email.hasError || this.$refs.password.hasError) {
         this.formHasError = true
-        error_feedback()
+        errorFeedback()
       } else {
-        this.$q.notify({
+        this.loginUser()
+      }
+
+      function errorFeedback () {
+        let logoBlack = document.getElementById('logo-black')
+        let logoRed = document.getElementById('logo-red')
+
+        logoBlack.style.opacity = 0
+
+        setTimeout(() => {
+          logoRed.style.opacity = 1
+        }, 600)
+        setTimeout(() => {
+          logoRed.style.opacity = 0
+        }, 2000)
+        setTimeout(() => {
+          logoBlack.style.opacity = 1
+        }, 2300)
+      }
+    },
+    loginUser () {
+      // // Insert to Users to database
+      // usersRef.push({
+      //   access_role: 1,
+      //   email: 'root.jarias@gmail.com',
+      //   last_signed_in: '11-11-11:11-11-11',
+      //   name: 'John Rafael M. Arias',
+      //   phone: '09216980972',
+      //   photo_url: 'https://arias-portfolio.firebaseapp.com/img/main-logo-animated.235d1cb7.svg'
+      // }).then(function (e) {
+      //   console.log('Document successfully written!');
+      // })
+      //   .catch(function (error) {
+      //     console.error('Error writing document: ', error)
+      //   })
+
+      let userEmail = this.email
+      let userPassword = this.password
+      let self = this
+
+      firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).then(function () {
+        // Valid email and password from database
+        self.$q.notify({
           icon: 'verified_user',
           color: 'positive',
           message: 'Developers Console Activated'
         })
-      }
 
-      function error_feedback () {
-        let logo_black = document.getElementById('logo-black')
-        let logo_red = document.getElementById('logo-red')
-
-        logo_black.style.opacity = 0
-
-        setTimeout(() => {
-          logo_red.style.opacity = 1
-        }, 600)
-        setTimeout(() => {
-          logo_red.style.opacity = 0
-        }, 2000)
-        setTimeout(() => {
-          logo_black.style.opacity = 1
-        }, 2300)
-      }
-    },
-
-    start: function () {
-      // Read from firebase database
-      var users_array = []
-      usersRef.on('value', function (snapshot) {
-        snapshot.forEach(function (data) {
-          var childData = data.val()
-          // key_array.push(childData.unique_key)
-          console.log(data)
+        self.$router.push({ name: 'dashboard' })
+      }).catch(function (error) {
+        // Invalid email and password from database
+        self.$q.notify({
+          icon: 'verified_user',
+          color: 'negative',
+          message: error.message
         })
+
+        console.log('Error: ' + error.message)
       })
     }
 

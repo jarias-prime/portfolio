@@ -1,4 +1,4 @@
-# arias_portfolio
+# Development Proccess
 
 ## Project setup
 ```
@@ -23,6 +23,27 @@ npm run test
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+# Hosting
+## Firebase setup
+```
+npm install -g firebase-tools
+```
+
+### Initialization
+```
+firebase login (root.jarias@gmail.com)
+```
+
+### Serve project :: Overivew of project to be deployed
+```
+firebase serve
+```
+
+### Deploy project
+```
+firebase deploy
 ```
 
 ### Customize configuration

@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     // viewersRef: viewersRef,
-    get_device_data: function () {
+    get_device_data () {
       // Check if browser supports local storage
       if (typeof (Storage) !== 'undefined') {
         // Validate if unique key is not defined
@@ -130,7 +130,7 @@ export default {
               let time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
               let dateTime = date + ' ' + time
 
-              // Insert to firebase database
+              // Insert Viewers to database
               viewersRef.push({
                 uniqueKey: localKey,
                 // country: device_data.geoplugin_city,

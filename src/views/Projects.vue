@@ -26,7 +26,7 @@
                     :height="180"
                     style="background-color: #26a9ee;"
                   >
-                    <template v-slot:content="scope">
+                    <template>
                       <div class="absolute column items-center">
                         <img src="https://websakay.web.app/components/images/logo-one.png" />
                       </div>
@@ -62,7 +62,7 @@
                     <template v-slot:media>
                       <img src="http://www.servrevo.com/img/services/payroll-2.jpg" />
                     </template>
-                    <template v-slot:content="scope">
+                    <template>
                       <div class="absolute column items-center">
                         <img
                           src="http://www.servrevo.com/img/servrevo-logo.png"
