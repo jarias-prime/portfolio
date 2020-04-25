@@ -31,6 +31,11 @@ npm run lint
 npm install -g firebase-tools
 ```
 
+## Build Project
+```
+npm run build
+```
+
 ### Initialization
 ```
 firebase login (root.jarias@gmail.com)

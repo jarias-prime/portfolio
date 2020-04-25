@@ -9,12 +9,15 @@
           <q-slide-item
             left-color="teal-6"
             @left="developers_auth"
-            style="width:30%"
+            style="width: 15em"
           >
             <template v-slot:left>
               <span class="rs-fs-12 font-weight-bold text-white pos-center">Enable Developers Console</span>
             </template>
-            <q-item class="bg-grey-2">
+            <q-item
+              class="bg-grey-2"
+              :to="{ name: 'about' }"
+            >
               <q-item-section>
                 <span class="rs-fs-16 font-weight-bold text-teal">My Portfolio</span>
               </q-item-section>
@@ -23,7 +26,7 @@
         </div>
         <div class="col text-right">
           <q-btn
-            to="/"
+            :to="{ name: 'about' }"
             dense
             flat
             round
@@ -37,7 +40,7 @@
             >My Profile</q-tooltip>
           </q-btn>
           <q-btn
-            to="projects"
+            :to="{ name: 'projects' }"
             dense
             flat
             round
@@ -51,7 +54,7 @@
             >My Projects</q-tooltip>
           </q-btn>
           <q-btn
-            to="contact"
+            :to="{ name: 'contact' }"
             dense
             flat
             round
@@ -243,7 +246,7 @@ export default {
         } else {
           self.developers_dialog_box = true
         }
-      })          
+      })
     },
     developers_auth_reset (reset) {
       this.timer = setTimeout(() => {
