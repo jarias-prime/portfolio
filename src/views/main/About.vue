@@ -232,10 +232,10 @@
             />
           </svg>
         </div>
-        <div class="row role-content">
-          <div class="col-sm-12 col-md-4 mt--10 role-card-content">
-            <q-card class="role-card pos-right">
-              <q-card-section class="mt-2 text-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 role-card-content">
+            <q-card class="role-card">
+              <q-card-section class="text-center">
                 <div class="row">
                   <div class="col-xs-5 col-sm-12 col-md-12">
                     <img
@@ -308,8 +308,8 @@
               </q-card-section>
             </q-card>
           </div>
-          <div class="col-sm-12 col-md-4 mt--10 role-card-content">
-            <q-card class="role-card pos-left">
+          <div class="col-sm-12 col-md-4 role-card-content">
+            <q-card class="role-card">
               <q-card-section class="text-center">
                 <div class="row">
                   <div class="col-xs-5 col-sm-12 col-md-12">
@@ -817,48 +817,38 @@
   }
 }
 
-.role-card {
-  height: calc(65% + 30vmin);
-  margin: 1em;
+.role-card-content {
+  padding: 1em;
+  margin-top: -15em;
+}
+
+.role-card-content:nth-child(2) {
+  margin-top: -8em;
 }
 
 @media only screen and (max-width: 1023px) {
-  .role-content {
+  .role-card-content:nth-child(1) {
     margin-top: -20em;
   }
 
-  .role-card-content {
-    margin-top: 0;
-    margin-bottom: 5%;
+  .role-card-content:nth-child(2) {
+    margin-top: 5px;
   }
 
-  .role-card {
-    height: 100%;
-    float: none;
-    opacity: 0.8;
-    width: 97%;
+  .role-card-content:nth-child(3) {
+    margin-top: 5px;
   }
 }
 
-@media only screen and (max-width: 599px) {
-  .role-content-icon {
-    float: right;
-    margin-right: 10px;
-    margin-bottom: 2em;
-  }
-
-  .role-content-title {
-    float: left;
-    margin-top: 25%;
-    margin-left: 10px;
-    margin-bottom: 2em;
-  }
+.role-card {
+  height: 100%;
+  width: 100%;
 }
 
 /* Skills Content */
 .divider-art-icon {
   margin: auto;
-  margin-top: calc(8% + 1vmin);
+  margin-top: calc(5% + 1vmin);
   margin-bottom: calc(3% + 1vmin);
   width: 100%;
   position: relative;
@@ -1029,7 +1019,6 @@
 
 <script>
 export default {
-  mounted () { },
   data () {
     return {
       dialog: false,
@@ -1043,8 +1032,6 @@ export default {
       english_write: 90,
       english_communicate: 90
     }
-  },
-  methods: {},
-  computed: {}
+  }
 }
 </script>
