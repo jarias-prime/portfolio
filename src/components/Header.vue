@@ -37,7 +37,9 @@
             <q-tooltip
               content-class="bg-indigo"
               :offset="[10, 10]"
-            >My Profile</q-tooltip>
+            >
+              My Profile
+            </q-tooltip>
           </q-btn>
           <q-btn
             :to="{ name: 'projects' }"
@@ -237,13 +239,14 @@ export default {
     developers_auth ({ reset }) {
       let self = this
 
-      this.$q.notify('developers authentication is required. Please Login.')
       this.developers_auth_reset(reset)
 
       firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
+          self.$q.notify('User is authenticated.')
           self.$router.push({ name: 'dashboard' })
         } else {
+          self.$q.notify('Developers authentication is required. Please Login.')
           self.developers_dialog_box = true
         }
       })

@@ -15,74 +15,76 @@
 
         <!-- Project Items -->
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="project-rs-card">
-              <div class="rs-card-header">
-                <q-parallax
-                  :height="180"
-                  style="background-color: #26a9ee;"
-                >
-                  <template>
-                    <div class="absolute column items-center">
-                      <img src="https://websakay.web.app/components/images/logo-one.png" />
-                    </div>
-                  </template>
-                </q-parallax>
-              </div>
-              <div class="rs-card-content">
-                <div class="rs-card-title text-center font-weight-bold rs-fs-16">
+              <q-parallax
+                :height="180"
+                style="background-color: #26a9ee;"
+              >
+                <template>
+                  <div class="pos-absolute column items-center">
+                    <img src="https://websakay.web.app/components/images/logo-one.png" />
+                  </div>
+                </template>
+              </q-parallax>
+              <div class="project-rs-card-body">
+                <div class="text-center font-weight-bold rs-fs-16">
                   <p>“QCPU SAKAY" – A Bus Transportation System</p>
                 </div>
-                <div class="rs-card-body rs-fs-12 mt-2">
+                <div class="rs-fs-12 mt-2">
                   <p>Good Ride Starts Here.</p>
                   <p>
                     QCPU Sakay is your best commuting buddy that let you commute with ease. Get an
                     all-in-one app that has Real Time Location Tracking with easy mode of payment.
                   </p>
                   <p>Just Ride, Locate, Tap and Scan to pay.</p>
-                  <a
-                    class="text-deco-none teal-text"
-                    href="https://websakay.web.app/"
-                    target="_blank"
-                  >
-                    <q-btn class="pos-absolute-center mt-3 border-teal border-rd-20 hover-teal">View Project</q-btn>
-                  </a>
                 </div>
+              </div>
+              <div class="project-rs-card-footer">
+                <a
+                  class="text-deco-none teal-text"
+                  href="https://websakay.web.app/"
+                  target="_blank"
+                  style="buttom: 0"
+                >
+                  <q-btn class="pos-absolute-center mt-3 border-teal border-rd-20 hover-teal">View Project</q-btn>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="project-rs-card">
-              <div class="rs-card-header">
-                <q-parallax :height="180">
-                  <template v-slot:media>
-                    <img src="http://www.servrevo.com/img/services/payroll-2.jpg" />
-                  </template>
-                  <template>
-                    <div class="absolute column items-center">
-                      <img
-                        src="http://www.servrevo.com/img/servrevo-logo.png"
-                        style="width: 60%; height: 50px"
-                      />
-                    </div>
-                  </template>
-                </q-parallax>
-              </div>
-              <div class="rs-card-content">
-                <div class="rs-card-title text-center font-weight-bold rs-fs-16">
+              <q-parallax :height="180">
+                <template v-slot:media>
+                  <img src="http://www.servrevo.com/img/services/payroll-2.jpg" />
+                </template>
+                <template>
+                  <div class="pos-absolute column items-center">
+                    <img
+                      src="http://www.servrevo.com/img/servrevo-logo.png"
+                      height="50px"
+                    />
+                  </div>
+                </template>
+              </q-parallax>
+              <div class="project-rs-card-body">
+                <div class="text-center font-weight-bold rs-fs-16">
                   <p>ServRevo Corporation – Seats and Room Reservation System</p>
                 </div>
-                <div class="rs-card-body rs-fs-12 mt-2">
+                <div class="rs-fs-12 mt-2">
                   <p>ServRevo Corp. (ServRevo) is an outsourcing company providing shared services, co-working spaces, HR/Payroll, and staffing solutions.</p>
                   <p>Our bespoke offshore solutions integrate seamlessly with any business requirement - providing a full rage of services covering recruitment, human resources, payroll management and services offices.</p>
-                  <a
-                    class="text-deco-none teal-text"
-                    href="http://www.servrevo.com/"
-                    target="_blank"
-                  >
-                    <q-btn class="pos-absolute-center mt-3 border-teal border-rd-20 hover-teal">View Project</q-btn>
-                  </a>
                 </div>
+              </div>
+              <div class="project-rs-card-footer">
+                <a
+                  class="text-deco-none teal-text"
+                  href="http://www.servrevo.com/"
+                  target="_blank"
+                  style="buttom: 0"
+                >
+                  <q-btn class="pos-absolute-center mt-3 border-teal border-rd-20 hover-teal">View Project</q-btn>
+                </a>
               </div>
             </div>
           </div>
@@ -121,7 +123,8 @@ export default {
 
 <style scoped>
 .project-rs-card {
-  height: auto;
+  position: relative;
+  height: 55vh;
   width: 90%;
   margin-top: 10%;
   margin: 5% auto;
@@ -135,7 +138,18 @@ export default {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22);
 }
 
-.project-rs-card .rs-card-content {
-  margin: 5%;
+.project-rs-card-body {
+  margin: 20px;
+  background: -webkit-linear-gradient(90deg, rgb(202, 202, 202), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-rs-card-footer {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  background-color: #f3f3f3;
 }
 </style>

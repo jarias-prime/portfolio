@@ -56,56 +56,11 @@ export default new Router({
       name: 'sample',
       component: () => import('./views/admin/Sample.vue')
     }]
-  }]
+  }],
+  scrollBehavior () {
+    return {
+      x: 0,
+      y: 0
+    }
+  }
 })
-
-// path: '/dashboard',
-// component: () => import('./views/admin/Index.vue'),
-// children: [{
-//   path: '/home',
-//   name: 'home',
-//   components: () => import('./views/admin/Dashboard.vue')
-// },
-// {
-//   path: '/sample',
-//   name: 'sample',
-//   component: () => import('./views/admin/Sample.vue')
-// }]
-
-// export default new Router({
-//   mode: 'history',
-//   base: process.env.BASE_URL,
-//   routes: [{
-//       path: '/',
-//       name: 'about',
-//       component: () => import('./views/About.vue'),
-//     },
-//     {
-//       path: '/projects',
-//       name: 'projects',
-//       component: () => import('./views/Projects.vue')
-//     },
-//     {
-//       path: '/contact',
-//       name: 'contact',
-//       component: () => import('./views/Contact.vue')
-//     },
-//     {
-//       path: '/dashboard',
-//       name: 'dashboard',
-//       component: () => import('./views/Dashboard.vue'),
-//       meta: {
-//         isAuthenticated: true
-//       },
-//       beforeEnter(to, from, next) {
-//         firebase.auth().onAuthStateChanged(function (user) {
-//           if (user) {
-//             next()
-//           } else {
-//             next('/about')
-//           }
-//         })
-//       }
-//     }
-//   ]
-// })
